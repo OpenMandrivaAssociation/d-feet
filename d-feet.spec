@@ -21,7 +21,8 @@ It allows :
 * to view names on any bus,
 * to view exported objects, interfaces, methods and signals,
 * to view the full command line of services on the bus,
-* and to execute methods with parameters on the bus and see their return. values 
+* and to execute methods with parameters on the bus and see their 
+ return values.
 
 %prep
 %setup -q
