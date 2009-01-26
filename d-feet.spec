@@ -1,6 +1,6 @@
 Name:			d-feet
 Version:		0.1.8
-Release:		%mkrel 1
+Release:		%mkrel 2
 
 Summary:	D-Feet is a D-Bus debugger
 License:	GPLv2+
