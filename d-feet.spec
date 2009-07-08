@@ -7,8 +7,8 @@ License:	GPLv2+
 Group:		Emulators
 URL:		http://fedorahosted.org/d-feet/
 Source:		http://johnp.fedorapeople.org/downloads/%{name}/%{name}-%{version}.tar.bz2
-BuildRequires:	python-devel
-#BuildRequires:	desktop-file-utils
+BuildRequires:	python-setuptools
+BuildRequires:	wxPythonGTK
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 Requires:	python-dbus
