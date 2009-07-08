@@ -1,13 +1,12 @@
 Name:			d-feet
-Version:		0.1.8
-Release:		%mkrel 2
+Version:		0.1.10
+Release:		%mkrel 1
 
 Summary:	D-Feet is a D-Bus debugger
 License:	GPLv2+
 Group:		Emulators
 URL:		http://fedorahosted.org/d-feet/
-Source:		http://johnp.fedorapeople.org/%name-%version.tar.gz
-
+Source:		http://johnp.fedorapeople.org/downloads/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
 #BuildRequires:	desktop-file-utils
 BuildRoot:	%{_tmppath}/%{name}-%{version}
