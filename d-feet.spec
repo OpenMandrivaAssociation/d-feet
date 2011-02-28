@@ -1,6 +1,6 @@
-Name:			d-feet
-Version:		0.1.10
-Release:		%mkrel 2
+Name:		d-feet
+Version:	0.1.10
+Release:	%mkrel 3
 
 Summary:	D-Feet is a D-Bus debugger
 License:	GPLv2+
@@ -12,6 +12,7 @@ BuildRequires:	wxPythonGTK
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 Requires:	python-dbus
+Requires:	pygtk2.0-libglade
 
 %description
 D-Feet is a D-Bus debugger written in PyGtk by John (J5) Palmieri.
@@ -30,7 +31,7 @@ It allows :
 python setup.py build
 
 %install
-rm -rf %buildroot
+rm -rf %{buildroot}
 python setup.py install --skip-build --root=%{buildroot}
 
 %clean
