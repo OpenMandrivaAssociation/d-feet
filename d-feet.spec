@@ -37,7 +37,8 @@ python setup.py install --skip-build --root=%{buildroot}
 %doc AUTHORS COPYING README
 %{python_sitelib}/*
 %{_bindir}/%{name}
+%{_datadir}/applications/dfeet.desktop
 %{_datadir}/dfeet/
 %{_iconsdir}/hicolor/*/apps/*.png
-%{_datadir}/applications/dfeet.desktop
+%{_iconsdir}/hicolor/*/apps/*.svg
 
