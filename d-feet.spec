@@ -4,7 +4,7 @@
 Summary:	D-Bus debugger
 Name:		d-feet
 Version:	0.3.3
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Emulators
 Url:		http://fedorahosted.org/d-feet/
