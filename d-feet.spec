@@ -3,18 +3,20 @@
 
 Summary:	D-Bus debugger
 Name:		d-feet
-Version:	0.3.3
-Release:	3
+Version:	0.3.10
+Release:	1
 License:	GPLv2+
 Group:		Emulators
 Url:		http://fedorahosted.org/d-feet/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/d-feet/%{url_ver}/%{name}-%{version}.tar.xz
-
+BuildRequires:	gtk+3.0-devel >= 3.9.4
 BuildRequires:	python-setuptools
-BuildRequires:	wxPythonGTK
+BuildRequires:	intltool
+BuildRequires:	itstool
+BuildRequires:	gettext
+BuildRequires:	desktop-file-utils
 Requires:	python-dbus
-Requires:	pygtk2.0-libglade
-
+Requires:	typelib(Gtk) = 3.0
 %description
 D-Feet is a D-Bus debugger written in PyGtk by John (J5) Palmieri.
 
@@ -29,17 +31,23 @@ It allows :
 %setup -q
 
 %build
-python setup.py build
+%configure --disable-tests
+%make
 
 %install
-python setup.py install --skip-build --root=%{buildroot}
+%makeinstall_std
 
-%files
+%find_lang %{name} --with-gnome
+
+%files -f %{name}.lang
 %doc AUTHORS COPYING README
 %{python_sitelib}/*
 %{_bindir}/%{name}
-%{_datadir}/applications/dfeet.desktop
-%{_datadir}/dfeet/
+%{_datadir}/applications/d-feet.desktop
+%{_datadir}/d-feet/
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/*/apps/*.svg
+%{_datadir}/appdata/d-feet.appdata.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.d-feet.gschema.xml
+%{_iconsdir}/HighContrast/*/apps/*.svg
 
