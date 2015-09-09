@@ -17,6 +17,8 @@ BuildRequires:	itstool
 BuildRequires:	gettext
 BuildRequires:	desktop-file-utils
 BuildRequires:	gnome-common
+BuildRequires:	yelp-tools
+BuildRequires:	yelp
 Requires:	python-dbus
 Requires:	typelib(Gtk) = 3.0
 %description
