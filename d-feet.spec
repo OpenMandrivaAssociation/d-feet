@@ -15,6 +15,7 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	gettext
 BuildRequires:	desktop-file-utils
+BuildRequires:	gnome-common
 Requires:	python-dbus
 Requires:	typelib(Gtk) = 3.0
 %description
