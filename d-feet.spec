@@ -10,6 +10,7 @@ Group:		Emulators
 Url:		http://fedorahosted.org/d-feet/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/d-feet/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	gtk+3.0-devel >= 3.9.4
+BuildRequires:	gobject-introspection-devel
 BuildRequires:	python-setuptools
 BuildRequires:	intltool
 BuildRequires:	itstool
