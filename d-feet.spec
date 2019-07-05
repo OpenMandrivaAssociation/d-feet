@@ -47,11 +47,11 @@ It allows :
 %doc AUTHORS COPYING README
 %{python_sitelib}/*
 %{_bindir}/%{name}
-%{_datadir}/applications/d-feet.desktop
+%{_datadir}/applications/org.gnome.dfeet.desktop
 %{_datadir}/d-feet/
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/*/apps/*.svg
-%{_datadir}/appdata/d-feet.appdata.xml
-%{_datadir}/glib-2.0/schemas/org.gnome.d-feet.gschema.xml
+%{_datadir}/metainfo/org.gnome.dfeet.appdata.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.dfeet.gschema.xml
 %{_iconsdir}/HighContrast/*/apps/*.svg
 
