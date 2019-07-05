@@ -3,7 +3,7 @@
 
 Summary:	D-Bus debugger
 Name:		d-feet
-Version:	0.3.10
+Version:	0.3.14
 Release:	1
 License:	GPLv2+
 Group:		Emulators
@@ -36,10 +36,10 @@ It allows :
 
 %build
 %configure --disable-tests
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{name} --with-gnome
 
