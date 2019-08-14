@@ -3,7 +3,7 @@
 
 Summary:	D-Bus debugger
 Name:		d-feet
-Version:	0.3.14
+Version:	0.3.15
 Release:	1
 License:	GPLv2+
 Group:		Emulators
