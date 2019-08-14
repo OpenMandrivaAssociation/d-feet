@@ -19,6 +19,7 @@ BuildRequires:	desktop-file-utils
 BuildRequires:	gnome-common
 BuildRequires:	yelp-tools
 BuildRequires:	yelp
+BuildRequires: meson
 Requires:	python-dbus
 Requires:	typelib(Gtk) = 3.0
 %description
@@ -35,11 +36,11 @@ It allows :
 %setup -q
 
 %build
-%configure --disable-tests
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %find_lang %{name} --with-gnome
 
