@@ -3,7 +3,7 @@
 
 Summary:	D-Bus debugger
 Name:		d-feet
-Version:	0.3.15
+Version:	0.3.14
 Release:	1
 License:	GPLv2+
 Group:		Emulators
@@ -19,12 +19,8 @@ BuildRequires:	desktop-file-utils
 BuildRequires:	gnome-common
 BuildRequires:	yelp-tools
 BuildRequires:	yelp
-BuildRequires: meson
-BuildRequires: python3dist(pycodestyle)
 Requires:	python-dbus
-#Requires:	typelib(Gtk) = 3.0
-#Requires:       python3dist(dbus-python)
-Requires:       python3dist(pygobject)
+Requires:	typelib(Gtk) = 3.0
 %description
 D-Feet is a D-Bus debugger written in PyGtk by John (J5) Palmieri.
 
@@ -39,17 +35,17 @@ It allows :
 %setup -q
 
 %build
-%meson
-%meson_build
+%configure --disable-tests
+%make_build
 
 %install
-%meson_install
+%make_install
 
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING README
-%{python_sitearch}/*
+%{python_sitelib}/*
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.dfeet.desktop
 %{_datadir}/d-feet/
@@ -57,5 +53,5 @@ It allows :
 %{_iconsdir}/hicolor/*/apps/*.svg
 %{_datadir}/metainfo/org.gnome.dfeet.appdata.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.dfeet.gschema.xml
-#{_iconsdir}/HighContrast/*/apps/*.svg
+%{_iconsdir}/HighContrast/*/apps/*.svg
 
