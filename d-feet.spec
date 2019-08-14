@@ -55,5 +55,5 @@ It allows :
 #{_iconsdir}/hicolor/*/apps/*.svg
 %{_datadir}/metainfo/org.gnome.dfeet.appdata.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.dfeet.gschema.xml
-%{_iconsdir}/HighContrast/*/apps/*.svg
+#{_iconsdir}/HighContrast/*/apps/*.svg
 
