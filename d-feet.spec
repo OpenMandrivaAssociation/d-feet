@@ -20,6 +20,7 @@ BuildRequires:	gnome-common
 BuildRequires:	yelp-tools
 BuildRequires:	yelp
 BuildRequires: meson
+BuildRequires: python3dist(pycodestyle)
 Requires:	python-dbus
 Requires:	typelib(Gtk) = 3.0
 %description
