@@ -47,12 +47,12 @@ It allows :
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING README
-#{python_sitelib}/*
+%{python_sitearch}/*
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.dfeet.desktop
 %{_datadir}/d-feet/
 %{_iconsdir}/hicolor/*/apps/*.png
-#{_iconsdir}/hicolor/*/apps/*.svg
+%{_iconsdir}/hicolor/*/apps/*.svg
 %{_datadir}/metainfo/org.gnome.dfeet.appdata.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.dfeet.gschema.xml
 #{_iconsdir}/HighContrast/*/apps/*.svg
