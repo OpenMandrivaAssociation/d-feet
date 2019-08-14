@@ -23,6 +23,8 @@ BuildRequires: meson
 BuildRequires: python3dist(pycodestyle)
 Requires:	python-dbus
 Requires:	typelib(Gtk) = 3.0
+Requires:       python3dist(dbus-python)
+Requires:       python3dist(pygobject)
 %description
 D-Feet is a D-Bus debugger written in PyGtk by John (J5) Palmieri.
 
