@@ -48,7 +48,7 @@ It allows :
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING README
-#{python_sitelib}/*
+%{python3_sitearch}/*
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.dfeet.desktop
 %{_datadir}/d-feet/
