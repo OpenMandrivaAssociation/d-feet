@@ -48,7 +48,7 @@ It allows :
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING README
-%{python3_sitearch}/*
+#{python3_sitearch}/*
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.dfeet.desktop
 %{_datadir}/d-feet/
@@ -57,4 +57,3 @@ It allows :
 %{_datadir}/metainfo/org.gnome.dfeet.appdata.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.dfeet.gschema.xml
 #{_iconsdir}/HighContrast/*/apps/*.svg
-
