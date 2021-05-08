@@ -1,10 +1,10 @@
-%define	debug_package %{nil}
+#define	debug_package %{nil}
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Summary:	D-Bus debugger
 Name:		d-feet
-Version:	0.3.15
-Release:	2
+Version:	0.3.16
+Release:	1
 License:	GPLv2+
 Group:		Emulators
 Url:		http://fedorahosted.org/d-feet/
