@@ -47,7 +47,7 @@ It allows :
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc AUTHORS COPYING README
+%doc AUTHORS COPYING README.md
 %{python_sitelib}/dfeet/*
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.dfeet.desktop
